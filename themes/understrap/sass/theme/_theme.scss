@@ -1,0 +1,58 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+@import 'kyani-nav/kyani-nav';
+@import 'kyani-nav/side-menu';
+@import 'kyani-archive/archive-search-form';
+@import 'kyani-archive/featured-carousel';
+@import 'kyani-archive/pagination';
+@import 'kyani-single/single-post';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 31, 64, 0.9);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(256, 256, 256, 0.6) !important;
+  border-radius: 3px;
+}
+
+#archive-wrapper, #single-wrapper, #search-wrapper {
+  margin-top: 97px;
+  padding: 50px 2rem;
+
+  @media screen and (max-width: 768px) {
+	padding: 50px 1rem;
+
+	.container {
+	  padding: 0;
+	}
+  }
+}
+
+#wrapper-footer {
+  padding: 0;
+}
+
+
+img.wp-post-image, article img, figure, img, #secondary img {
+
+  @media screen and (max-width: 360px) {
+	max-width: 100%;
+	height: 100% !important;
+	object-fit: cover !important;
+  }
+}

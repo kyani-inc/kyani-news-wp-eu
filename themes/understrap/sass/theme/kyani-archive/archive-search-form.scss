@@ -1,0 +1,29 @@
+#searchform {
+  margin-bottom: 24px;
+  padding: 0;
+
+  .input-group {
+	border-bottom: solid 1px #dddddd;
+
+	.field.form-control {
+	  border: none;
+	  background: none;
+	  border-radius: 0;
+	  outline-color: transparent;
+	  outline-style: none;
+
+	  &:focus {
+		outline-color: transparent;
+		outline-style: none;
+	  }
+	}
+
+	.input-group-append{
+
+	  .searchform-search {
+		display: flex;
+		justify-content: center;
+	  }
+	}
+  }
+}

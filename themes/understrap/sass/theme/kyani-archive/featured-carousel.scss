@@ -1,0 +1,74 @@
+.site-main {
+
+  .carousel {
+	margin-bottom: 1rem;
+
+	.carousel-indicators {
+	  bottom: -50px;
+
+	  li {
+		border-radius: 100%;
+		width: 10px;
+		height: 10px;
+		background-color: #dddddd;
+		opacity: 1;
+
+		&.active {
+		  background-color: $primary;
+		}
+	  }
+	}
+
+	.carousel-item {
+
+	  img {
+
+		&.carousel-image-large {
+		  @media screen and (max-width: 768px) {
+			display: none !important;
+		  }
+		}
+
+		&.carousel-image-mobile {
+		  object-fit: cover;
+		  @media (min-width: 768px) {
+			display: none !important;
+		  }
+		}
+	  }
+
+	  .carousel-caption {
+		background-color: rgba(255, 255, 255, 0.9);
+		width: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 8px;
+		text-align: left;
+
+		@media (max-width: 768px) {
+		  display: block !important;
+		}
+
+		.entry-post-date {
+		  color: #666666;
+		  font-weight: 600;
+
+		  .entry-date {
+			font-size: .75rem;
+		  }
+		}
+
+		.carousel-post-title {
+		  color: $primary;
+		  font-weight: 600;
+		  margin-bottom: 0;
+		}
+
+		.carousel-post-excerpt {
+		  color: #666666;
+		}
+	  }
+	}
+  }
+}

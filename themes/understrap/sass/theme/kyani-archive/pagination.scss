@@ -1,0 +1,40 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .pagination {
+	padding: 20px;
+	justify-content: center;
+	border: 1px solid lightgray;
+	background: none;
+	width: 450px;
+
+
+	.page-item {
+
+	  .page-link {
+		background: none;
+		border: none;
+		padding: 10px 15px;
+		color: gray;
+
+		&.current {
+		  background: #002857;
+		  border-radius: 50%;
+		  color: white;
+		}
+
+		&.prev {
+		  color: #002857;
+		}
+
+		&.next {
+		  color: #002857;
+		}
+	  }
+	}
+
+  }
+
+}
