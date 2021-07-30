@@ -71,20 +71,21 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 				<?php echo esc_html( $args['screen_reader_text'] ); ?>
 			</h2>
 
-			<ul class="<?php echo esc_attr( $class ); ?>">
+			<div class="pagination-container">
+				<ul class="<?php echo esc_attr( $class ); ?>">
 
-				<?php
-				foreach ( $links as $key => $link ) {
-					?>
-					<li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
-						<?php echo str_replace( 'page-numbers', 'page-link', $link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					</li>
 					<?php
-				}
-				?>
+					foreach ( $links as $key => $link ) {
+						?>
+						<li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
+							<?php echo str_replace( 'page-numbers', 'page-link', $link ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+						</li>
+						<?php
+					}
+					?>
 
-			</ul>
-
+				</ul>
+			</div>
 		</nav>
 
 		<?php
