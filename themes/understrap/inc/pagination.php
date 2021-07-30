@@ -50,8 +50,8 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 			array(
 				'mid_size'           => 2,
 				'prev_next'          => true,
-				'prev_text'          => __( '&laquo;', 'understrap' ),
-				'next_text'          => __( '&raquo;', 'understrap' ),
+				'prev_text' => __('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>', 'understrap'),
+				'next_text' => __('<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>', 'understrap'),
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
 				'screen_reader_text' => __( 'Posts navigation', 'understrap' ),
