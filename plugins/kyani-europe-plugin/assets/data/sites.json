@@ -1,0 +1,294 @@
+{
+  "regions": [
+    {
+      "name": "North America",
+      "countries": [
+        {
+          "code": "us",
+          "url": "/us",
+          "display_name": "USA"
+        },
+        {
+          "code": "ca",
+          "url": "/ca",
+          "display_name": "Canada"
+        }
+      ]
+    },
+    {
+      "name": "Central / South America",
+      "countries": [
+        {
+          "code": "co",
+          "url": "/co",
+          "display_name": "Colombia"
+        },
+        {
+          "code": "do",
+          "url": "/do",
+          "display_name": "Dominican Republic"
+        },
+        {
+          "code": "mx",
+          "url": "/mx",
+          "display_name": "Mexico"
+        },
+        {
+          "code": "pe",
+          "url": "/pe",
+          "display_name": "Peru"
+        },
+        {
+          "code": "pr",
+          "url": "/pr",
+          "display_name": "Puerto Rico"
+        }
+      ]
+    },
+    {
+      "name": "Europe",
+      "countries": [
+        {
+          "code": "at",
+          "url": "/at",
+          "display_name": "Austria"
+        },
+        {
+          "code": "be",
+          "url": "/be",
+          "display_name": "Belgium"
+        },
+        {
+          "code": "bg",
+          "url": "/bg",
+          "display_name": "Bulgaria"
+        },
+        {
+          "code": "hr",
+          "url": "/hr",
+          "display_name": "Croatia"
+        },
+        {
+          "code": "cz",
+          "url": "/cz",
+          "display_name": "Czech Republic"
+        },
+        {
+          "code": "cy",
+          "url": "/cy",
+          "display_name": "Cyprus"
+        },
+        {
+          "code": "dk",
+          "url": "/dk",
+          "display_name": "Denmark"
+        },
+        {
+          "code": "ee",
+          "url": "/ee",
+          "display_name": "Estonia"
+        },
+        {
+          "code": "fi",
+          "url": "/fi",
+          "display_name": "Finland"
+        },
+        {
+          "code": "fr",
+          "url": "/fr",
+          "display_name": "France"
+        },
+        {
+          "code": "de",
+          "url": "/de",
+          "display_name": "Germany"
+        },
+        {
+          "code": "gr",
+          "url": "/gr",
+          "display_name": "Greece"
+        },
+        {
+          "code": "hu",
+          "url": "/hu",
+          "display_name": "Hungary"
+        },
+        {
+          "code": "ie",
+          "url": "/ie",
+          "display_name": "Ireland"
+        },
+        {
+          "code": "it",
+          "url": "/it",
+          "display_name": "Italy"
+        },
+        {
+          "code": "lv",
+          "url": "/lv",
+          "display_name": "Latvia"
+        },
+        {
+          "code": "li",
+          "url": "/li",
+          "display_name": "Liechtenstein"
+        },
+        {
+          "code": "lt",
+          "url": "/lt",
+          "display_name": "Lithuania"
+        },
+        {
+          "code": "lu",
+          "url": "/lu",
+          "display_name": "Luxembourg"
+        },
+        {
+          "code": "mt",
+          "url": "/mt",
+          "display_name": "Malta"
+        },
+        {
+          "code": "nl",
+          "url": "/nl",
+          "display_name": "Netherlands"
+        },
+        {
+          "code": "no",
+          "url": "/no",
+          "display_name": "Norway"
+        },
+        {
+          "code": "pl",
+          "url": "/pl",
+          "display_name": "Poland"
+        },
+        {
+          "code": "pt",
+          "url": "/pt",
+          "display_name": "Portugal"
+        },
+        {
+          "code": "ro",
+          "url": "/ro",
+          "display_name": "Romania"
+        },
+        {
+          "code": "sk",
+          "url": "/sk",
+          "display_name": "Slovakia"
+        },
+        {
+          "code": "si",
+          "url": "/si",
+          "display_name": "Slovenia"
+        },
+        {
+          "code": "es",
+          "url": "/es",
+          "display_name": "Spain"
+        },
+        {
+          "code": "se",
+          "url": "/se",
+          "display_name": "Sweden"
+        },
+        {
+          "code": "ch",
+          "url": "/ch",
+          "display_name": "Switzerland"
+        },
+        {
+          "code": "tr",
+          "url": "/tr",
+          "display_name": "Turkey"
+        },
+        {
+          "code": "gb",
+          "url": "/gb",
+          "display_name": "United Kingdom"
+        }
+      ]
+    },
+    {
+      "name": "Greater China",
+      "countries": [
+        {
+          "code": "cn",
+          "url": "/cn",
+          "display_name": "China"
+        },
+        {
+          "code": "hk",
+          "url": "/hk",
+          "display_name": "Hong Kong"
+        },
+        {
+          "code": "mo",
+          "url": "/mo",
+          "display_name": "Macau"
+        },
+        {
+          "code": "tw",
+          "url": "/tw",
+          "display_name": "Taiwan"
+        }
+      ]
+    },
+    {
+      "name": "South Asia / North Asia / Pacific",
+      "countries": [
+        {
+          "code": "au",
+          "url": "/au",
+          "display_name": "Australia"
+        },
+        {
+          "code": "pf",
+          "url": "/pf",
+          "display_name": "French Polynesia"
+        },
+        {
+          "code": "jp",
+          "url": "/jp",
+          "display_name": "Japan"
+        },
+        {
+          "code": "kr",
+          "url": "/kr",
+          "display_name": "Korea"
+        },
+        {
+          "code": "my",
+          "url": "/my",
+          "display_name": "Malaysia"
+        },
+        {
+          "code": "nz",
+          "url": "/nz",
+          "display_name": "New Zealand"
+        },
+        {
+          "code": "ph",
+          "url": "/ph",
+          "display_name": "Philippines"
+        },
+        {
+          "code": "sg",
+          "url": "/sg",
+          "display_name": "Singapore"
+        },
+        {
+          "code": "th",
+          "url": "/th",
+          "display_name": "Thailand"
+        },
+        {
+          "code": "id",
+          "url": "/id",
+          "display_name": "Indonesia"
+        }
+      ]
+    }
+  ]
+}
