@@ -170,5 +170,47 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name' => __('Footer Menu', 'understrap'),
+				'id' => 'footerfull',
+				'description' => __('Full sized footer menu widget with dynamic grid', 'understrap'),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s dynamic-classes">',
+				'after_widget' => '</div><!-- .footer-widget -->',
+				'before_title' => '<h3 class="widget-title">',
+				'after_title' => '</h3><span class="widget-title-separator"></span>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name' => __('Footer Logo', 'understrap'),
+				'id' => 'footerlogo',
+				'description' => __('Full sized footer area for logo icon', 'understrap'),
+				'before_widget' => '<div id="%1$s" class="footer-widget-logo %2$s dynamic-classes">',
+				'after_widget' => '</div>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name' => __('Footer Social', 'understrap'),
+				'id' => 'footersocial',
+				'description' => __('Full sized footer area for social media icons', 'understrap'),
+				'before_widget' => '<div id="%1$s" class="footer-widget-social %2$s dynamic-classes">',
+				'after_widget' => '</div>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name' => __('Footer Additional Text', 'understrap'),
+				'id' => 'footertext',
+				'description' => __('Full sized footer area for additional text', 'understrap'),
+				'before_widget' => '<div id="%1$s" class="footer-widget-text %2$s dynamic-classes">',
+				'after_widget' => '</div>',
+			)
+		);
+
 	}
 } // End of function_exists( 'understrap_widgets_init' ).

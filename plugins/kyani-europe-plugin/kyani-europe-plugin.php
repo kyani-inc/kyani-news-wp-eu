@@ -10,7 +10,8 @@
 $kyani_plugin_includes = array(
 	'/setup.php',
 	'/rest-api.php',
-	'/nav-country-switcher.php'
+	'/nav-country-switcher.php',
+	'/dynamic-year.php'
 );
 
 foreach ($kyani_plugin_includes as $file) {
