@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Function to use the news archive page as the front page
  */
