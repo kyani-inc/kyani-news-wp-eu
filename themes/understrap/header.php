@@ -142,4 +142,4 @@ $container = get_theme_mod('understrap_container_type');
 
 		<!-- Side Menu .side-menu -->
 
-
+	</div>
