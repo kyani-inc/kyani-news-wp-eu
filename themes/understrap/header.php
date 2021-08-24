@@ -36,6 +36,7 @@ $container = get_theme_mod('understrap_container_type');
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e('Main Navigation', 'understrap'); ?>
 			</h2>
+
 			<!-- Your site title as branding in the menu -->
 			<?php if (!has_custom_logo()) { ?>
 
@@ -69,7 +70,7 @@ $container = get_theme_mod('understrap_container_type');
 							'fallback_cb' => '',
 							'menu_id' => 'main-menu',
 							'depth' => 3,
-							'walker' => new Custom_WP_Bootstrap_Navwalker()
+							'walker' => new Custom_WP_Bootstrap_Navwalker(),
 					)
 			);
 			?>
@@ -102,9 +103,6 @@ $container = get_theme_mod('understrap_container_type');
 			);
 			?>
 		</nav>
-		<!-- Secondary Nav .second-nav-->
-
-		<!-- Secondary Nav Mobile .second-nav-->
 		<nav class="navbar-expand navbar-dark second-nav mobile">
 			<?php
 			wp_nav_menu(
@@ -112,7 +110,7 @@ $container = get_theme_mod('understrap_container_type');
 							'theme_location' => 'secondary',
 							'container_class' => 'navbar',
 							'container_id' => 'navbarNavDropdown',
-							'menu-class' => 'navbar-nav mx-auto',
+							'menu_class' => 'navbar-nav mx-auto',
 							'fallback_cb' => '',
 							'menu_id' => 'secondary-menu',
 							'depth' => 1,
@@ -120,8 +118,11 @@ $container = get_theme_mod('understrap_container_type');
 					)
 			);
 			?>
+
 		</nav>
-		<!-- Secondary Nav Mobile .second-nav-->
+
+		</nav>
+		<!-- Secondary Nav .second-nav-->
 
 		<!-- Side Menu .side-menu -->
 		<div class="side-menu hidden" id="side-panel-menu">
@@ -138,6 +139,7 @@ $container = get_theme_mod('understrap_container_type');
 				?>
 			</div>
 		</div>
+
 		<!-- Side Menu .side-menu -->
 
-	</div><!-- #wrapper-navbar end -->
+	</div>
