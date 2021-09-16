@@ -401,10 +401,6 @@ if (!function_exists('understrap_news_social_share')) {
 			<a href="<?php echo esc_url_raw($facebookURL) ?>" onclick="window.open(this.href, 'mywin',
 				'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">
 				<img src="<?php echo esc_url(bloginfo('template_directory') . "/images/facebook.svg") ?>"></a>
-
-			<a href="<?php echo esc_url_raw($twitterURL) ?>" onclick="window.open(this.href, 'mywin',
-				'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img
-						src="<?php echo esc_url(bloginfo('template_directory') . "/images/twitter.svg") ?>"></a>
 		</div>
 		<?php
 	}
