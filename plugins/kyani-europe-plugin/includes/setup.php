@@ -6,7 +6,7 @@ add_action('pre_get_posts', 'archive_page_as_front_page');
 function archive_page_as_front_page($query) {
 	if (is_admin()) return;
 
-	if ($query->get('page_id') === get_option('page_on_front')) {
+	if ($query->get('page_id') == get_option('page_on_front')) {
 		$query->set('post_type', 'news');
 		$query->set('page_id', '');
 		$query->is_page = $query->is_singular = 0;
