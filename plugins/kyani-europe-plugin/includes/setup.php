@@ -6,7 +6,7 @@ add_action('pre_get_posts', 'archive_page_as_front_page');
 function archive_page_as_front_page($query) {
 	if (is_admin()) return;
 
-	if ($query->get('page_id') === get_option('page_on_front')) {
+	if ($query->get('page_id') == get_option('page_on_front')) {
 		$query->set('post_type', 'news');
 		$query->set('page_id', '');
 		$query->is_page = $query->is_singular = 0;
@@ -23,14 +23,14 @@ function archive_page_as_front_page($query) {
 		$query->set('paged', $paged);
 		$query->set('meta_query', array(
 			array(
-				'key' => 'featured_post',
-				'value' => '0'
+				'key' => 'post_featured',
+				'value' => 'no'
 			),
 			array(
 				'relation' => 'OR',
 				array(
 					'key' => 'back_office_only',
-					'value' => '0'
+					'value' => 'no'
 				),
 				array(
 					'key' => 'back_office_only',
@@ -40,6 +40,3 @@ function archive_page_as_front_page($query) {
 		));
 	}
 }
-/*
- * End function to use the news archive page as the front page
- */
