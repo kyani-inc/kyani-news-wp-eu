@@ -1,0 +1,12 @@
+{
+  "locales": [
+    {
+      "bo_locale": "lv-lv",
+      "wp_locale": "lv"
+    },
+    {
+      "bo_locale": "en-gb",
+      "wp_locale": "en"
+    }
+  ]
+}
