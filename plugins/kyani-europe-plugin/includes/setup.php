@@ -23,14 +23,14 @@ function archive_page_as_front_page($query) {
 		$query->set('paged', $paged);
 		$query->set('meta_query', array(
 			array(
-				'key' => 'post_featured',
-				'value' => 'no'
+				'key' => 'featured_post',
+				'value' => '0'
 			),
 			array(
 				'relation' => 'OR',
 				array(
 					'key' => 'back_office_only',
-					'value' => 'no'
+					'value' => '0'
 				),
 				array(
 					'key' => 'back_office_only',
