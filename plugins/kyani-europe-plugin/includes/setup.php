@@ -41,45 +41,45 @@ function archive_page_as_front_page($query) {
 	}
 }
 
-/*
- * Remove backoffice only posts
- */
-add_action('pre_get_posts', 'news_only_update');
-function news_only_update($query)
-{
-	if (!is_admin() && $query->is_main_query()) {
-		if (!is_front_page() && !is_tax() && !is_search()) {
-			$query->set('meta_query', array(
-				array(
-					'key' => 'featured_post',
-					'value' => '0'
-				),
-				array(
-					'relation' => 'OR',
-					array(
-						'key' => 'back_office_only',
-						'value' => '0'
-					),
-					array(
-						'key' => 'back_office_only',
-						'compare' => 'NOT EXISTS'
-					)
-				)
-			));
-		} else if (is_tax() || is_search()) {
-			$query->set('meta_query', array(
-				array(
-					'relation' => 'OR',
-					array(
-						'key' => 'back_office_only',
-						'value' => '0'
-					),
-					array(
-						'key' => 'back_office_only',
-						'compare' => 'NOT EXISTS'
-					)
-				)
-			));
-		}
-	}
-}
+///*
+// * Remove backoffice only posts
+// */
+//add_action('pre_get_posts', 'news_only_update');
+//function news_only_update($query)
+//{
+//	if (!is_admin() && $query->is_main_query()) {
+//		if (!is_front_page() && !is_tax() && !is_search()) {
+//			$query->set('meta_query', array(
+//				array(
+//					'key' => 'featured_post',
+//					'value' => '0'
+//				),
+//				array(
+//					'relation' => 'OR',
+//					array(
+//						'key' => 'back_office_only',
+//						'value' => '0'
+//					),
+//					array(
+//						'key' => 'back_office_only',
+//						'compare' => 'NOT EXISTS'
+//					)
+//				)
+//			));
+//		} else if (is_tax() || is_search()) {
+//			$query->set('meta_query', array(
+//				array(
+//					'relation' => 'OR',
+//					array(
+//						'key' => 'back_office_only',
+//						'value' => '0'
+//					),
+//					array(
+//						'key' => 'back_office_only',
+//						'compare' => 'NOT EXISTS'
+//					)
+//				)
+//			));
+//		}
+//	}
+//}
